@@ -1,3 +1,14 @@
+/* Signature image bottom right on hero section */
+.signature-bottom-right {
+  position: absolute;
+  bottom: 24px;
+  right: 0px;
+  width: 180px;
+  height: auto;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 20;
+}
 body {
   margin: 0;
   padding: 0;
@@ -568,7 +579,8 @@ html {
 .h-panel {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  padding: 1rem 1rem; /* reduced top/bottom padding */
+  padding-top: 0rem; /* remove extra top padding for alignment */
+  padding-bottom: 1rem;
   padding-left: max(1rem, calc(var(--nav-offset) + 1em)); /* balance the centering */
   padding-right: max(1.5rem, calc(var(--nav-offset) + 5.7em)); /* extra right margin for centering */
   box-sizing: border-box;
@@ -605,6 +617,7 @@ html {
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: white;
+  margin-bottom: 2.5rem; /* add spacing below header for all containers */
   width: 44px;
   height: 44px;
   border-radius: 50%;
