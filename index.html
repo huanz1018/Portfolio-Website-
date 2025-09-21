@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Huan Zhang - UX/UI Designer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <section class="hero">
+    <nav class="navbar">
+      <div class="nav-left">
+        <a href="./Files/ActualResume.docx.pdf" class="resume-btn" title="Resume" target="_blank"><i class="fas fa-file-alt"></i></a>
+      </div>
+      <div class="nav-center">
+        <a href="#about">About</a>
+        <a href="#past-projects">Current Projects</a>
+        <a href="#current-projects">Research</a>
+      </div>
+      <div class="nav-right">
+        <div class="social-icons">
+          <a href="https://github.com/huanz1018" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/huanzhang0405" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="mailto:huanz@umich.edu" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+      </div>
+    </nav>
+    <p class="name-subheader"></p>
+    <h1>Huan Zhang</h1>
+    <p class="subheader">is an aspiring UX designer with a 
+      background in statistics, computer science, environmental science, and art. 
+      Welcome to her portfolio where you will find a collection of her work and 
+      insights into her design process!
+    </p>
+    <a href="#about" class="explore-btn">Start Exploring</a>
+  </section>
+
+  <section id="about" class="section about-section">
+    <div class="section-content about-content">
+      <div class="about-image-container">
+        <div class="cute-frame">
+          <div class="about-carousel">
+            <button class="carousel-nav prev" onclick="changeAboutImage(-1)">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="carousel-images">
+              <img src="./image/About Me Picture.jpg" alt="About Me" class="about-image active">
+              <img src="./image/collage 1.jpg" alt="About Me - Collage 1" class="about-image">
+              <img src="./image/collage 2.jpg" alt="About Me - Collage 2" class="about-image">
+              <img src="./image/collage 3.jpg" alt="About Me - Collage 3" class="about-image">
+              <img src="./image/collage 4.jpg" alt="About Me - Collage 4" class="about-image">
+              <img src="./image/collage 5.png" alt="About Me - Collage 5" class="about-image">
+              <img src="./image/mommy.JPG" alt="About Me - With Mom" class="about-image">
+            </div>
+            <button class="carousel-nav next" onclick="changeAboutImage(1)">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="carousel-indicators">
+            <span class="indicator active" onclick="currentAboutImage(1)"></span>
+            <span class="indicator" onclick="currentAboutImage(2)"></span>
+            <span class="indicator" onclick="currentAboutImage(3)"></span>
+            <span class="indicator" onclick="currentAboutImage(4)"></span>
+            <span class="indicator" onclick="currentAboutImage(5)"></span>
+            <span class="indicator" onclick="currentAboutImage(6)"></span>
+            <span class="indicator" onclick="currentAboutImage(7)"></span>
+          </div>
+        </div>
+      </div>
+      <div class="about-text">
+        <h2>About</h2>
+        <p>Hi! My name is Huan, like Prince Hans from Frozen but without the “S.” 
+          I’m a sophomore at the University of Michigan, studying the intersection 
+          of math, science, and art. To my friends, I’m an empathetic listener who 
+          loves good food, new adventures, and always adopting the glass half full mentality. 
+          To my family, I’m a caring daughter of two immigrant parents who have always 
+          supported my dreams. To myself, I’m a curious anomaly: someone who finds joy 
+          in both creative expression and logical problem-solving. I hope to bring that 
+          same mix of heart and logic into every project I take on.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="past-projects" class="section">
+    <div class="section-content">
+      <h2>Current Projects</h2>
+      <button class="scroller-nav prev" aria-label="Previous panel" onclick="scrollPanels(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="scroller-nav next" aria-label="Next panel" onclick="scrollPanels(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="past-horizontal" aria-label="Past projects scroller">
+        <!-- Panel 1: Sierra Club -->
+        <section class="h-panel" aria-labelledby="panel-sierra">
+          <div class="project-section-full">
+            <h3 id="panel-sierra">Sierra Club</h3>
+            <p>As Digital Media Chair for Sierra Club at University of Michigan, I am 
+              managing and enhancing the organization's online presence through digital content
+              creation and my developing website management skills. Learn more about our club and its
+              mission by visiting my website below! </p>
+            <div class="project-content">
+              <div class="project-image">
+                <img src="./image/Website Sneak Peek.png" alt="Sierra Club Website Preview" class="project-img">
+              </div>
+              <div class="project-links">
+                <a href="https://sierraclubatumich.wordpress.com/" target="_blank" class="website-link">
+                  <i class="fas fa-external-link-alt"></i> Visit Website
+                </a>
+              </div>
+            </div>
+            <div class="media-designs-section">
+              <h4>Media Designs</h4>
+              <div class="image-gallery">
+                <div class="gallery-container">
+                  <button class="gallery-nav prev" onclick="changeImage(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <div class="gallery-images">
+                    <img src="./image/meet-eboard-1.png" alt="Meet the Eboard Design 1" class="gallery-img active">
+                    <img src="./image/meet-eboard-2.png" alt="Meet the Eboard Design 2" class="gallery-img">
+                    <img src="./image/meet-eboard-3.png" alt="Meet the Eboard Design 3" class="gallery-img">
+                    <img src="./image/meet-eboard-4.png" alt="Meet the Eboard Design 4" class="gallery-img">
+                    <img src="./image/meet-eboard-5.png" alt="Meet the Eboard Design 5" class="gallery-img">
+                    <img src="./image/meet-eboard-6.png" alt="Meet the Eboard Design 6" class="gallery-img">
+                  </div>
+                  <button class="gallery-nav next" onclick="changeImage(1)">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="gallery-indicators">
+                  <span class="indicator active" onclick="currentImage(1)"></span>
+                  <span class="indicator" onclick="currentImage(2)"></span>
+                  <span class="indicator" onclick="currentImage(3)"></span>
+                  <span class="indicator" onclick="currentImage(4)"></span>
+                  <span class="indicator" onclick="currentImage(5)"></span>
+                  <span class="indicator" onclick="currentImage(6)"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <!-- Panel 2: Artwork -->
+        <section class="h-panel" aria-labelledby="panel-artwork">
+          <div class="project-section-full artwork-section">
+            <h3 id="panel-artwork">Artwork</h3>
+            <p>This is a collection of my favorite artistic creations showcasing various painting techniques and creative expressions using guoache and watercolor techniques.
+            </p>
+            <div class="artwork-gallery-section">
+              <div class="artwork-gallery">
+                <div class="gallery-container">
+                  <button class="gallery-nav prev" onclick="changeArtworkImage(-1)">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <div class="gallery-images artwork-images">
+                    <img src="./image/paint1.jpg" alt="Artwork 1" class="gallery-img artwork-gallery-img active">
+                    <img src="./image/paint2.JPG" alt="Artwork 2" class="gallery-img artwork-gallery-img">
+                    <img src="./image/paint3.JPG" alt="Artwork 3" class="gallery-img artwork-gallery-img">
+                    <img src="./image/paint4.jpg" alt="Artwork 4" class="gallery-img artwork-gallery-img">
+                    <img src="./image/paint5.jpg" alt="Artwork 5" class="gallery-img artwork-gallery-img">
+                    <img src="./image/paint6.JPG" alt="Artwork 6" class="gallery-img artwork-gallery-img">
+                    <img src="./image/paint7.jpg" alt="Artwork 7" class="gallery-img artwork-gallery-img">
+                  </div>
+                  <button class="gallery-nav next" onclick="changeArtworkImage(1)">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+                <div class="gallery-indicators artwork-indicators">
+                  <span class="indicator active" onclick="currentArtworkImage(1)"></span>
+                  <span class="indicator" onclick="currentArtworkImage(2)"></span>
+                  <span class="indicator" onclick="currentArtworkImage(3)"></span>
+                  <span class="indicator" onclick="currentArtworkImage(4)"></span>
+                  <span class="indicator" onclick="currentArtworkImage(5)"></span>
+                  <span class="indicator" onclick="currentArtworkImage(6)"></span>
+                  <span class="indicator" onclick="currentArtworkImage(7)"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Panel 3: Global Career Accelerator -->
+        <section class="h-panel" aria-labelledby="panel-gca">
+          <div class="project-section-full">
+            <h3 id="panel-gca">Global Career Accelerator</h3>
+            <p>This semester, I am a part of the Global Career Accelerator program,
+              where I am learning web development and UX/UI design skills. Whether that is 
+              creating responsive designs, understanding how to make interfaces accessible to 
+              all users, or collaborating with a team to bring ideas to life, I am excited to start
+              implementing what I've learned into UX/UI design.
+              </p>
+            </p>
+            <div class="project-content">
+              <div class="project-image">
+                <img src="./image/Intel Website.png" alt="Intel Website Preview" class="project-img">
+              </div>
+              <div class="project-links">
+                <a href="https://huanz1018.github.io/Intel-Sustainability-Project-P2/" target="_blank" class="website-link">
+                  <i class="fas fa-external-link-alt"></i> Visit Website
+                </a>
+              </div>
+              <p>Currently, I am designing a website for Intel's
+              sustainability initiatives, focusing on user experience and visual design to effectively communicate
+              their commitment to environmental responsibility. In this project, I learned how to use
+              tools like Bootstrap for grids and layouts, Lighthouse to optimize performance and accessibility, GitHub for version
+              control, and responsive design to ensure the website looks great on all devices.</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
+
+  <section id="current-projects" class="section">
+    <div class="section-content">
+      <h2>Research</h2>
+      <!-- CHAI Lab Research Assistant Project -->
+      <div class="project-section-full">
+        <h3>CHAI Lab Research Assistant</h3>
+        <p>I am currently working as a research assistant at the Computer-Human Artificial Intelligence Lab.
+          The overarching vision is to improve SER (Speech Emotion Recognition) systems by making them more aware of where emotion occurs. 
+          This can be helpful for downstream tasks like mental health monitoring, chatbots, and more to localize exact points where emotion is salient. Learn more
+          about the CHAI Lab and what I'm working on!
+        </p>
+        
+        <div class="project-content">
+          <div class="project-image">
+            <img src="./image/Lab.png" alt="CHAI Lab preview" class="project-img" loading="lazy">
+          </div>
+          <div class="project-links">
+              <a href="./Files/CHAI Lab - Emotion Regional Saliency in SER (3).pdf" target="_blank" class="website-link">
+                <i class="fas fa-file-pdf"></i> View Ongoing Research 
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<script>
+// Sierra Club Gallery
+let currentImageIndex = 0;
+const images = document.querySelectorAll('.gallery-images:not(.artwork-images) .gallery-img');
+const indicators = document.querySelectorAll('.gallery-indicators:not(.artwork-indicators) .indicator');
+
+function showImage(index) {
+  // Hide all images
+  images.forEach(img => img.classList.remove('active'));
+  indicators.forEach(ind => ind.classList.remove('active'));
+  
+  // Show current image
+  images[index].classList.add('active');
+  indicators[index].classList.add('active');
+}
+
+function changeImage(direction) {
+  currentImageIndex += direction;
+  
+  if (currentImageIndex >= images.length) {
+    currentImageIndex = 0;
+  } else if (currentImageIndex < 0) {
+    currentImageIndex = images.length - 1;
+  }
+  
+  showImage(currentImageIndex);
+}
+
+function currentImage(index) {
+  currentImageIndex = index - 1;
+  showImage(currentImageIndex);
+}
+
+// Artwork Gallery
+let currentArtworkIndex = 0;
+const artworkImages = document.querySelectorAll('.artwork-images .artwork-gallery-img');
+const artworkIndicators = document.querySelectorAll('.artwork-indicators .indicator');
+
+function showArtworkImage(index) {
+  // Hide all artwork images
+  artworkImages.forEach(img => img.classList.remove('active'));
+  artworkIndicators.forEach(ind => ind.classList.remove('active'));
+  
+  // Show current artwork image
+  artworkImages[index].classList.add('active');
+  artworkIndicators[index].classList.add('active');
+}
+
+function changeArtworkImage(direction) {
+  currentArtworkIndex += direction;
+  
+  if (currentArtworkIndex >= artworkImages.length) {
+    currentArtworkIndex = 0;
+  } else if (currentArtworkIndex < 0) {
+    currentArtworkIndex = artworkImages.length - 1;
+  }
+  
+  showArtworkImage(currentArtworkIndex);
+}
+
+function currentArtworkImage(index) {
+  currentArtworkIndex = index - 1;
+  showArtworkImage(currentArtworkIndex);
+}
+
+// About Me Carousel
+let currentAboutImageIndex = 0;
+const aboutImages = document.querySelectorAll('.about-carousel .about-image');
+const aboutIndicators = document.querySelectorAll('.carousel-indicators .indicator');
+
+function showAboutImage(index) {
+  // Hide all images
+  aboutImages.forEach(img => img.classList.remove('active'));
+  aboutIndicators.forEach(ind => ind.classList.remove('active'));
+  
+  // Show current image
+  aboutImages[index].classList.add('active');
+  aboutIndicators[index].classList.add('active');
+}
+
+function changeAboutImage(direction) {
+  currentAboutImageIndex += direction;
+  
+  if (currentAboutImageIndex >= aboutImages.length) {
+    currentAboutImageIndex = 0;
+  } else if (currentAboutImageIndex < 0) {
+    currentAboutImageIndex = aboutImages.length - 1;
+  }
+  
+  showAboutImage(currentAboutImageIndex);
+}
+
+function currentAboutImage(index) {
+  currentAboutImageIndex = index - 1;
+  showAboutImage(currentAboutImageIndex);
+}
+
+// Add keyboard navigation
+document.addEventListener('keydown', function(event) {
+  if (event.key === 'ArrowLeft') {
+    changeImage(-1);
+  } else if (event.key === 'ArrowRight') {
+    changeImage(1);
+  }
+});
+</script>
+
+<script>
+// Horizontal scroller controls for Past Projects
+let pastPanelIndex = 0;
+function getPanels() {
+  return Array.from(document.querySelectorAll('#past-projects .h-panel'));
+}
+function scrollPanels(direction) {
+  const scroller = document.querySelector('#past-projects .past-horizontal');
+  const panels = getPanels();
+  if (!scroller || panels.length === 0) return;
+  pastPanelIndex = Math.min(Math.max(pastPanelIndex + direction, 0), panels.length - 1);
+  const targetLeft = pastPanelIndex * window.innerWidth;
+  scroller.scrollTo({ left: targetLeft, behavior: 'smooth' });
+}
+
+function alignFirstPanel() {
+  const scroller = document.querySelector('#past-projects .past-horizontal');
+  if (!scroller) return;
+  scroller.scrollTo({ left: 0, behavior: 'instant' });
+  pastPanelIndex = 0;
+}
+
+window.addEventListener('load', alignFirstPanel);
+window.addEventListener('resize', () => {
+  // Re-center current panel on resize so content stays centered
+  const scroller = document.querySelector('#past-projects .past-horizontal');
+  if (!scroller) return;
+  const targetLeft = pastPanelIndex * window.innerWidth;
+  scroller.scrollTo({ left: targetLeft, behavior: 'instant' });
+});
+</script>
+
+</body>
+</html>
